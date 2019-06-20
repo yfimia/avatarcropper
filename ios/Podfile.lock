@@ -1,0 +1,83 @@
+PODS:
+  - QBImagePickerController (3.4.0)
+  - React (0.59.9):
+    - React/Core (= 0.59.9)
+  - react-native-image-resizer (1.0.1):
+    - React
+  - React/Core (0.59.9):
+    - yoga (= 0.59.9.React)
+  - React/fishhook (0.59.9)
+  - React/RCTActionSheet (0.59.9):
+    - React/Core
+  - React/RCTAnimation (0.59.9):
+    - React/Core
+  - React/RCTBlob (0.59.9):
+    - React/Core
+  - React/RCTGeolocation (0.59.9):
+    - React/Core
+  - React/RCTImage (0.59.9):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.59.9):
+    - React/Core
+  - React/RCTNetwork (0.59.9):
+    - React/Core
+  - React/RCTSettings (0.59.9):
+    - React/Core
+  - React/RCTText (0.59.9):
+    - React/Core
+  - React/RCTVibration (0.59.9):
+    - React/Core
+  - React/RCTWebSocket (0.59.9):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
+  - RNImageCropPicker (0.24.1):
+    - QBImagePickerController
+    - React/Core
+    - RSKImageCropper
+  - RSKImageCropper (2.2.1)
+  - yoga (0.59.9.React)
+
+DEPENDENCIES:
+  - react-native-image-resizer (from `../node_modules/react-native-image-resizer`)
+  - React/Core (from `../node_modules/react-native`)
+  - React/RCTActionSheet (from `../node_modules/react-native`)
+  - React/RCTAnimation (from `../node_modules/react-native`)
+  - React/RCTGeolocation (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTLinkingIOS (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTSettings (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTVibration (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RNImageCropPicker (from `../node_modules/react-native-image-crop-picker`)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga/yoga.podspec`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - QBImagePickerController
+    - RSKImageCropper
+
+EXTERNAL SOURCES:
+  React:
+    :path: "../node_modules/react-native"
+  react-native-image-resizer:
+    :path: "../node_modules/react-native-image-resizer"
+  RNImageCropPicker:
+    :path: "../node_modules/react-native-image-crop-picker"
+  yoga:
+    :path: "../node_modules/react-native/ReactCommon/yoga/yoga.podspec"
+
+SPEC CHECKSUMS:
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  React: a86b92f00edbe1873a63e4a212c29b7a7ad5224f
+  react-native-image-resizer: ecae22b577b0425cd7803eb8145243038dd4b6bd
+  RNImageCropPicker: 6134b66a3d5bc13e2895a97c630a4254006902b4
+  RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
+  yoga: 03ff42a6f223fb88deeaed60249020d80c3091ee
+
+PODFILE CHECKSUM: e40524b19493b7b8164f6a324d8752cb598315ea
+
+COCOAPODS: 1.7.2
