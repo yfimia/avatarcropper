@@ -56,7 +56,7 @@ export default class App extends Component<Props> {
                 {
                     options: ['Take a Photo', 'Choose from Library', 'Cancel'],
                     destructiveButtonIndex: -1,
-                    cancelButtonIndex: 0,
+                    cancelButtonIndex: 2,
                     title: "Choose a Photo"
                 },
                 (buttonIndex) => this.optionDispatcherIOS(buttonIndex)
@@ -80,10 +80,13 @@ export default class App extends Component<Props> {
 
     resizePictures(picturePromise) {
         let createResizedImages = picturePromise.then(image => {
+            debugger
+            console.log(image);
+            let pathImage = (Platform.OS === 'ios') ? `file://${image.path}` : image.path;
             return Promise.all([
-                new Promise(resolve => resolve({ uri: `file://${image.path}` })),
-                ImageResizer.createResizedImage(image.sourceURL, PHOTO_SIZE_MEDIUM, PHOTO_SIZE_MEDIUM, 'JPEG', 100, 0),
-                ImageResizer.createResizedImage(image.sourceURL, PHOTO_SIZE_SMALL, PHOTO_SIZE_SMALL, 'JPEG', 100, 0)
+                new Promise(resolve => resolve({ uri: pathImage })),
+                ImageResizer.createResizedImage(pathImage /*image.sourceURL*/, PHOTO_SIZE_MEDIUM, PHOTO_SIZE_MEDIUM, 'JPEG', 100, 0),
+                ImageResizer.createResizedImage(pathImage /*image.sourceURL*/, PHOTO_SIZE_SMALL, PHOTO_SIZE_SMALL, 'JPEG', 100, 0)
             ]);
         })
             .catch(e => {
